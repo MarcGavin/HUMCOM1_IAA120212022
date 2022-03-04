@@ -1,0 +1,143 @@
+<!DOCTYPE dtml>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Marc Gavin Col-iteng" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Exercise 5 Tables </title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            td {
+                text-align: center;
+            }
+            #tableG{
+                border-spacing: 30px 30px;
+            }
+            </style>
+        </head>
+</html>
+<body>
+    <table>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>A</th>
+            <th>D</th>
+        </tr>
+        <tr>
+            <th>B</th>
+            <th>E</th>
+        </tr>
+        <tr>
+            <th>C</th>
+            <th>F</th>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="3">Title goes here</th>
+        <tr>
+            <tr>
+                <td>A</td>
+                <td>C</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>D</td>
+                <td>F</td>
+            </tr>     
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th rowspan="3">Title goes here</th>
+            <td>A</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th style="height:50px;width:150px" rowspan="3">Title goes here</th>
+            <td style="height:50px;width:50px" >A</td>
+            <td style="height:50px;width:50px">D</td>
+        </tr>
+        <tr>
+            <td style="height:50px;width:50px">B</td>
+            <td style="height:50px;width:50px">E</td>
+        </tr>
+        <tr>
+            <td style="height:50px;width:50px">C</td>
+            <td style="height:50px;width:50px">F</td>
+        </tr>
+    </table>
+    <br>
+    <table id="tableG">
+        <tr>
+            <th rowspan="3">Title goes here</th>
+            <td>A</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th colspan="3">Title goes here</th>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td colspan="2">I</td>
+            <td rowspan="2">J</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td colspan="4">O</td>
+        </tr>
+    </table>
+
+</body>
